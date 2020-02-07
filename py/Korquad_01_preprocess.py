@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[35]:
 
 
 import json
@@ -10,14 +10,14 @@ import pandas as pd
 
 # ## KorQuad 1.0
 
-# In[4]:
+# In[36]:
 
 
-corpus_fname_01 = "./data/input/KorQuAD_v1.0_train.json"
-output_fname_01 = "./data/output/korquad_v01.txt"
+corpus_fname_01 = "..//Data/input/KorQuAD_v1.0_train.json"
+output_fname_01 = "../Data/output/korquad_v01.txt"
 
 
-# In[5]:
+# In[37]:
 
 
 with open(corpus_fname_01) as f1, open(output_fname_01, 'w', encoding ='utf-8') as f2:
@@ -36,13 +36,13 @@ with open(corpus_fname_01) as f1, open(output_fname_01, 'w', encoding ='utf-8') 
             f2.writelines(line + '\n')
 
 
-# In[6]:
+# In[38]:
 
 
 dataset[0]
 
 
-# In[54]:
+# In[39]:
 
 
 w_lines
@@ -50,14 +50,14 @@ w_lines
 
 # ## KorQuad 2.0
 
-# In[46]:
+# In[40]:
 
 
-corpus_fname_02 = "./data/input/korquad2.1_train_00.json"
-output_fname_02 = "./data/output/processed_korquad_train_00.txt"
+corpus_fname_02 = "../Data/input/korquad2.1_train_00.json"
+output_fname_02 = "../Data/output/processed_korquad_train_00.txt"
 
 
-# In[47]:
+# In[41]:
 
 
 with open(corpus_fname_02) as f1, open(output_fname_02, 'w', encoding ='utf-8') as f2:
@@ -77,32 +77,56 @@ with open(corpus_fname_02) as f1, open(output_fname_02, 'w', encoding ='utf-8') 
                     
 
 
-# In[48]:
+# In[42]:
 
 
 dataset_02 = dataset_json_02['data']
 
 
-# In[49]:
+# In[43]:
 
 
 dataset_json_02.keys()
 
 
-# In[50]:
+# In[44]:
 
 
 dataset_json_02['data'][0]
 
 
-# In[51]:
+# In[45]:
 
 
 dataset_json_02['data'][1]
 
 
-# In[42]:
+# In[46]:
 
 
 len(dataset_json['data'])
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
